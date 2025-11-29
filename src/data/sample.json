@@ -1,0 +1,15 @@
+{
+    "conversation":[
+        {
+            "id" : "conv1",
+            "messages":[
+                {"user":"Hi, what is the weather", "ai": "It's sunny in Tokyo."}
+            ],
+            "feedback" :{
+                "thumbs" :"up",
+                "rating":4,
+                "comment":"Helpful and quick!"
+            }
+        }
+    ]
+}

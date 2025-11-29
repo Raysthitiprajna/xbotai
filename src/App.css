@@ -1,38 +1,130 @@
-.App {
+body{
+  margin: 0;
+  font-family: "Segoe UI",sans-serif;
+}
+
+.app-layout{
+  display: flex;
+  height: 100vh;
+  background-color: #f3eaff;
+}
+.sidebar{
+  width: 220px;
+  background-color: #e9dfff;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px solid #d3c1f0;
+
+}
+
+.sidebar-btn{
+  background: white;
+  border: 1px solid #c5aefc;
+  color: #5a2ea6;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+.main-content{
+  flex: 1;
+  padding: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.avatar-img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+.prompt-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+.prompt-card{
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.prompt-card h4{
+  color: #5a2ea6;
+  margin-bottom: 5px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.prompt-card p{
+  color:gray ;
+  font-size: 14px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.chat-input{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.chat-input input{
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
   color: white;
+  cursor: pointer;
+
+}
+.chat-input button[type="submit"]{
+  background-color: #b18aff;
+
+}
+.chat-input button[type="button"]{
+  background-color: #8f6de0;
+}
+.feedback-buttons{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.feedback-panel{
+  margin-top: 20px;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.feedback-panel textarea{
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.feedback-panel button{
+  margin-top: 10px;
+  background-color:#b18aff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px ;
+  cursor: pointer;
+}
+.stars span{
+  font-size: 24px;
 }
