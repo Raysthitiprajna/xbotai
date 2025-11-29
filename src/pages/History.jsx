@@ -17,6 +17,7 @@ const History = () => {
                 {chat.messages.map((msg,i) => (
                     <div key={i}>
                         <strong>User:</strong>
+                        {msg.user}
                         <br/>
                         <strong>AI:</strong>
                         {msg.ai}
